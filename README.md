@@ -7,7 +7,7 @@
 >  
 > **Integrantes:**
 > - Artur Uchôa Simões Barbosa - 00000850742  
-> - Nome 2  
+> - Gabrielly Gouveia da Silva Feitosa - 00000851368
 > - Isabel Lugon Leitão de Oliveira - 00000850648  
 > - José Edson Texeira Galdino - 00000850926
 > - José Roberval Vieira Gomes Neto - 00000848856
