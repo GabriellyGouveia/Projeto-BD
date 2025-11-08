@@ -15,6 +15,9 @@
 
 ---
 
+**LINK DO FigJam:** https://www.figma.com/board/Cejf1VxIgdxl4q9cIEsvrx/Projeto---Banco-de-Dados-CONCEITUAL---L%C3%93GICO?node-id=0-1&t=akMEl40zTmnXd7id-1
+
+---
 ## 🎯 Descrição do Projeto
 Este projeto consiste na implementação de um sistema de **E-commerce de uma loja de óculos**, desenvolvido como parte da disciplina **Projeto de Banco de Dados**.  
 O objetivo é projetar e implementar um banco de dados relacional utilizando **SQL** e uma **linguagem de apoio** para interação com o sistema.
