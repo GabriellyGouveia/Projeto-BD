@@ -1,4 +1,4 @@
-# 🛒 Sistema de E-commerce — Projeto de Banco de Dados
+# Sistema de E-commerce — Projeto de Banco de Dados
 
 > Projeto desenvolvido para a disciplina **Projeto de Banco de Dados**  
 > Curso: **Ciência da Computação**  
@@ -18,7 +18,7 @@
 **LINK DO FigJam:** https://www.figma.com/board/Cejf1VxIgdxl4q9cIEsvrx/Projeto---Banco-de-Dados-CONCEITUAL---L%C3%93GICO?node-id=0-1&t=akMEl40zTmnXd7id-1
 
 ---
-## 🎯 Descrição do Projeto
+## Descrição do Projeto
 Este projeto consiste na implementação de um sistema de **E-commerce de uma loja de óculos**, desenvolvido como parte da disciplina **Projeto de Banco de Dados**.  
 O objetivo é projetar e implementar um banco de dados relacional utilizando **SQL** e uma **linguagem de apoio** para interação com o sistema.
 
@@ -26,9 +26,9 @@ O sistema permite o gerenciamento completo de **clientes, vendedores, produtos, 
 
 ---
 
-## 🧩 Requisitos e Funcionalidades
+## Requisitos e Funcionalidades
 
-### 📁 Estrutura Geral
+### Estrutura Geral
 O sistema deve:
 - Criar e destruir completamente o banco de dados.
 - Incluir pelo menos **20 produtos**, **5 cargos** e **100 clientes ativos**.
@@ -36,7 +36,7 @@ O sistema deve:
 
 ---
 
-### 👥 Entidades Principais
+### Entidades Principais
 - **Clientes:** `id`, `nome`, `idade`, `sexo`, `data_nascimento`.
 - **Vendedores:** `id`, `nome`, `causa_social`, `tipo`, `nota_média`.
 - **Produtos:** `id`, `nome`, `descrição`, `quantidade_estoque`, `valor`, `observações`.
@@ -45,7 +45,7 @@ O sistema deve:
 
 ---
 
-### ⚙️ Regras e Requisitos do Sistema
+### Regras e Requisitos do Sistema
 
 #### Funções
 1. `Calcula_idade` → Recebe o ID do usuário e retorna a idade baseada na data atual.  
@@ -77,20 +77,20 @@ Criar **3 views** utilizando `JOIN` e `GROUP BY`.
 
 ---
 
-## 📋 Constraints
+## Constraints
 - **Sexo:** Deve ser `'m'`, `'f'` ou `'o'`.  
 - **Cargo:** Deve ser `'vendedor'`, `'gerente'` ou `'CEO'`.  
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - **Banco de Dados:** SQL 
 - **Linguagem de Apoio:** Python  
 - **Ferramentas:** MySQL Workbench, VS Code, FigJam, GitHub.
 
 ---
 
-## 🧠 Conceitos Aplicados
+## Conceitos Aplicados
 - Modelagem de dados  
 - Criação e manipulação de tabelas  
 - Consultas com `JOIN`, `GROUP BY` e `HAVING`  
@@ -99,7 +99,7 @@ Criar **3 views** utilizando `JOIN` e `GROUP BY`.
 
 ---
 
-## 🧾 Licença
+## Licença
 Este projeto é de uso educacional, desenvolvido apenas para fins acadêmicos.
 
 ---
