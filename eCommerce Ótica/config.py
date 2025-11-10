@@ -1,3 +1,3 @@
 HOST = "localhost"
 USUARIO = "root"
-SENHA = "bebel1901"
+SENHA = "1234"
