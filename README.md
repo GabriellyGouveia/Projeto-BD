@@ -31,14 +31,14 @@ O sistema permite o gerenciamento completo de **clientes, vendedores, produtos, 
 ### Estrutura Geral
 O sistema deve:
 - Criar e destruir completamente o banco de dados.
-- Incluir pelo menos **20 produtos**, **5 cargos** e **100 clientes ativos**.
+- Incluir pelo menos **20 produtos** e **100 clientes ativos**.
 - Permitir cadastro, consulta e exclusão de produtos e clientes.
 
 ---
 
 ### Entidades Principais
 - **Clientes:** `id`, `nome`, `idade`, `sexo`, `data_nascimento`.
-- **Vendedores:** `id`, `nome`, `causa_social`, `tipo`, `nota_média`.
+- **Vendedores:** `id`, `nome`, `causa_social`, `nota_média`.
 - **Produtos:** `id`, `nome`, `descrição`, `quantidade_estoque`, `valor`, `observações`.
 - **Transportadoras:** `id`, `nome`, `cidade`.
 - **Vendas:** registro contendo cliente, vendedor, produtos, transportadora e data/hora da operação.
@@ -66,7 +66,7 @@ O sistema deve:
 Criar **3 views** utilizando `JOIN` e `GROUP BY`.
 
 #### Procedures
-- `Reajuste`: Aplica reajuste salarial percentual a uma categoria.  
+- `Reajuste`: Aplica reajuste salarial percentual a todos os trabalhadores.  
 - `Sorteio`: Sorteia um cliente especial e concede voucher de R$100,00 ou R$200,00.  
 - `Venda`: Reduz a quantidade de produtos vendidos em 1.  
 - `Estatísticas`: Exibe estatísticas como:
