@@ -1,6 +1,79 @@
 from conectar import ligar
 from criar_db import Cliente 
 from criar_db import Vendedor
+import mysql.connector
+from config import HOST, USUARIO, SENHA
+
+def conectar():
+    try:
+        con = mysql.connector.connect(
+            host=HOST,
+            user=USUARIO,
+            password=SENHA,
+            database="ecommerce_oculos_db"
+        )
+        return con
+    except mysql.connector.Error as err:
+        print(f"Erro ao conectar ao banco: {err}")
+        return None
+
+def exibir_total_gasto_por_cliente(con):
+    cursor = con.cursor()
+    cursor.execute("SELECT * FROM vw_total_gasto_por_cliente")
+    resultados = cursor.fetchall()
+    print("\n TOTAL GASTO POR CLIENTE")
+    print("-" * 45)
+    for nome, total in resultados:
+        print(f"{nome:<25} | R$ {total:.2f}")
+    cursor.close()
+
+def exibir_total_vendido_por_vendedor(con):
+    cursor = con.cursor()
+    cursor.execute("SELECT * FROM vw_total_vendido_por_vendedor")
+    resultados = cursor.fetchall()
+    print("\n TOTAL VENDIDO POR VENDEDOR")
+    print("-" * 45)
+    for nome, total in resultados:
+        print(f"{nome:<25} | R$ {total:.2f}")
+    cursor.close()
+
+def exibir_produtos_mais_vendidos(con):
+    cursor = con.cursor()
+    cursor.execute("SELECT * FROM vw_produtos_mais_vendidos")
+    resultados = cursor.fetchall()
+    print("\n PRODUTOS MAIS VENDIDOS")
+    print("-" * 45)
+    for nome, qtd in resultados:
+        print(f"{nome:<25} | Quantidade vendida: {int(qtd)}")
+    cursor.close()
+
+def consultar_views():
+    """Submenu para exibir as views."""
+    con = conectar()
+    if not con:
+        print("Erro ao conectar no banco de dados.")
+        return
+
+    while True:
+        print("\n=== CONSULTAS (VIEWS) ===")
+        print("[1] Total gasto por cliente")
+        print("[2] Total vendido por vendedor")
+        print("[3] Produtos mais vendidos")
+        print("[0] Voltar")
+
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            exibir_total_gasto_por_cliente(con)
+        elif opcao == "2":
+            exibir_total_vendido_por_vendedor(con)
+        elif opcao == "3":
+            exibir_produtos_mais_vendidos(con)
+        elif opcao == "0":
+            break
+        else:
+            print("Opção inválida.")
+    con.close()
 
 def menu_cliente(id_cliente):
     usuario = Cliente(id_cliente)
