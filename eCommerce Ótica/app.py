@@ -73,26 +73,30 @@ def menu_adm(id_vendedor):
 
     while True:
         print("\n === MENU ADMINISTRADOR ===")
-        print("[1] Buscar")
-        print("[2] Apagar")
-        print("[3] Editar")             
-        print("[4] Adicionar")             
-        print("[5] Consultar")  
+        print("[1] Login")      
+        print("[2] Buscar")
+        print("[3] Apagar")
+        print("[4] Editar")             
+        print("[5] Adicionar")             
+        print("[6] Consultar")  
 
         opcao = input("Escolha uma opção: ")
         if opcao == "1":
+            #logica do login
+            print("ok")
+        elif opcao == "2":
             #logica buscar
             print("ok")           
-        elif opcao == "2":
+        elif opcao == "3":
             #logica apagar 
             print("ok")          
-        elif opcao == "3":
+        elif opcao == "4":
             #logica editar
             print("ok")
-        elif opcao == "4":
+        elif opcao == "5":
             #logica adicionar
             print("ok")
-        elif opcao == "5":
+        elif opcao == "6":
             #logica consultar
             print("ok")
         else:         
