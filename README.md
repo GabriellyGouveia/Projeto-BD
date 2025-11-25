@@ -8,13 +8,23 @@
 >  
 > **Integrantes:**
 > - Artur Uchôa Simões Barbosa - 00000850742  
-> - Gabrielly Gouveia da Silva Feitosa - 00000851368
+> - **Gabrielly Gouveia da Silva Feitosa - 00000851368**
 > - Isabel Lugon Leitão de Oliveira - 00000850648  
 > - José Edson Texeira Galdino - 00000850926
 > - José Roberval Vieira Gomes Neto - 00000848856
 
 ---
+### Minha Contribuição Técnica
+Neste projeto colaborativo, atuei diretamente na estruturação e automação do banco de dados:
 
+* **Desenvolvimento de Stored Procedures (SQL):** Fui a responsável pela implementação de todos os procedimentos armazenados do sistema, criando lógicas para:
+    * **Análise de Dados (Estatísticas):** Geração de relatórios automáticos sobre produtos mais vendidos, performance de vendedores e sazonalidade de vendas.
+    * **Regras de Negócio:** Automação de reajustes salariais e gestão de estoque pós-venda.
+    * **Engajamento:** Lógica de sorteios para clientes especiais.
+* **Modelagem de Dados:** Colaborei ativamente na definição da arquitetura do banco, auxiliando na construção dos modelos **Conceitual, Lógico e Físico**.
+* **Organização do Projeto:** Auxiliei na gestão das entregas e na documentação técnica da equipe.
+
+---
 **LINK DO FigJam:** https://www.figma.com/board/Cejf1VxIgdxl4q9cIEsvrx/Projeto---Banco-de-Dados-CONCEITUAL---L%C3%93GICO?node-id=0-1&t=akMEl40zTmnXd7id-1
 
 ---
